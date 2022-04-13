@@ -60,7 +60,8 @@ export const ValidateAlertFeilds = (feilds) => {
     priceSignal: Joi.string().required(),
     criteria: Joi.string().required(),
     value: Joi.string().required(),
-    activeDays: Joi.string().required()
+    activeDays: Joi.string().required(),
+    phone: Joi.string().optional(),
   })
 
   const validation = schema.validate(feilds);

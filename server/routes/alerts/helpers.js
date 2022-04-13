@@ -126,7 +126,8 @@ var ValidateAlertFeilds = function (feilds) {
         priceSignal: Joi.string().required(),
         criteria: Joi.string().required(),
         value: Joi.string().required(),
-        activeDays: Joi.string().required()
+        activeDays: Joi.string().required(),
+        phone: Joi.string().optional(),
     });
     var validation = schema.validate(feilds);
     if ((_a = validation.error) === null || _a === void 0 ? void 0 : _a.details[0]) {
